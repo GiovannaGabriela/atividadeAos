@@ -7,6 +7,7 @@ import com.aosprojeto.model.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
+  
     public User findByNome(String nome);
     public void deleteByNome(String nome);
 
